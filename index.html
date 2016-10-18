@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Front End Assignment - Progress Bars</title>
+    <style>body {
+  padding: 2em;
+  font-size: 1.2em;
+  color: #444;
+  background-color: #fff;
+  overflow: auto;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+body > :first-child {
+  margin-top: 0;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #000000;
+}
+body h1 {
+  font-size: 2.4em;
+  font-weight: 300;
+}
+body h2 {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+body h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+body h4 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+body h5 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+body h6 {
+  font-size: 1.0em;
+  font-weight: 600;
+}
+body strong {
+  color: #000000;
+}
+body del {
+  color: #6d6d6d;
+}
+body a,
+body a code {
+  color: #000;
+}
+body img {
+  max-width: 100%;
+}
+body > p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+body > ul,
+body > ol {
+  margin-bottom: 1.5em;
+}
+body blockquote {
+  margin: 1.5em 0;
+  font-size: inherit;
+  color: #6d6d6d;
+  border-color: #d6d6d6;
+  border-width: 4px;
+}
+body hr {
+  margin: 3em 0;
+  border-top: 2px dashed #d6d6d6;
+  background: none;
+}
+body table {
+  margin: 1.5em 0;
+  border-collapse: collapse;
+}
+body th {
+  color: #000000;
+  background: #f0f0f0;
+}
+body th,
+body td {
+  padding: .66em 1em;
+  border: 1px solid #d6d6d6;
+}
+body pre {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+body code {
+  color: #000000;
+  background-color: #f0f0f0;
+}
+body kbd {
+  color: #000000;
+  border: 1px solid #d6d6d6;
+  border-bottom: 2px solid #c7c7c7;
+  background-color: #f0f0f0;
+}
+</style>
+</head>
+<body>
+
+    <h1 id="front-end-assignment-progress-bars">Front End Assignment - Progress Bars</h1>
+<p><strong>Primary task:</strong>
+Using React.js implement the following (you can make it look however you like):</p>
+<p><a href="/progress-bars-demo.ogv">Example here</a></p>
+<p><a href="/bars.json">Endpoint here</a></p>
+<h3 id="requirements">Requirements</h3>
+<ul>
+<li>Must read data from the endpoint</li>
+<li>Multiple bars</li>
+<li>One set of controls that can control each bar on the fly</li>
+<li>Can&#39;t go under 0</li>
+<li>Can go over <em>limit</em> (defined in API), but limit the bar itself and change its colour</li>
+<li>Display usage amount, centered</li>
+<li>Write tests for your code (hint: TDD strongly preferred)</li>
+<li>Implement a responsive solution: testing it on mobile, tablet, etc. Getting it working nicely.</li>
+<li>Animate the bar change, make sure it works well when you tap buttons quickly.</li>
+<li>Version control (git)</li>
+</ul>
+<p>Once complete publish your code to github, bitbucket or other git based source control.</p>
+<p>Bonus points for implementing &quot;production quality&quot; code, using practices such as:</p>
+<ul>
+<li>Setting it up as a project</li>
+<li>Setting up some automated tools</li>
+<li>Linting, code quality, etc</li>
+<li>JavaScript/CSS minification, packaging, etc</li>
+<li>Using a CSS preprocessor like SASS/SCSS</li>
+<li>Styling it to a production quality level</li>
+</ul>
+<p>It&#39;s up to you to decide how far you want to go, time permitting.</p>
+<p>Example structure from the endpoint:</p>
+<pre><code class="lang-json">{
+    &quot;buttons&quot;: [
+        10,
+        38,
+        -13,
+        -18
+    ],
+    &quot;bars&quot;: [
+        62,
+        45,
+        62
+    ],
+    &quot;limit&quot;: 230
+}
+</code></pre>
+<h3 id="breakdown">Breakdown</h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>buttons</td>
+<td>The amount of buttons to display and what value they increment or decrement the selected bar. Randomly generates between 4 and 6 buttons.</td>
+</tr>
+<tr>
+<td>bars</td>
+<td>The number of progress bars to display and their default values. Randomly generates between 2 and 5 progress bars.</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>The equivalent to 100% of each bar. For example, the bar should be 100% filled when the progress hits 230.</td>
+</tr>
+</tbody>
+</table>
+<p>Have fun!</p>
+
+
+</body>
+</html>
+
