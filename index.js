@@ -66,8 +66,7 @@ app.get('/*', ( req, res ) => {
 
   res.json({
     buttons,
-    bars,
-    limit: Math.ceil(getRandomInt(100, 225) / 10) * 10
+    bars
   })
 })
 
