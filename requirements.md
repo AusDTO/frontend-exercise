@@ -1,32 +1,30 @@
 # Front End Assignment - Progress Bars
 
 **Primary task:**
-Using React.js **(no jQuery)** implement the following (you can make it look however you like):
+Using React.js implement progress bars:
 
-[Example here](/progress-bars-demo.ogv)
+[Design here](/design.png)
 
 [Endpoint here](/bars)
 
 ### Requirements
 
+* Use create-react-app to create your app.
+* Using component state is fine, you don’t need to use Redux.
+* Implement the provided design.
 * Must read data from the endpoint.
 * Multiple bars.
 * One set of controls that can control each bar on the fly.
 * Can't go under 0.
 * Can go over 100%, but limit the bar itself and change its colour.
 * Display usage amount as a percentage, centered on each bar.
-* Write tests for your code (hint: TDD strongly preferred).
-* Implement a responsive solution: testing it on mobile, tablet, etc. Getting it working nicely.
+* Implement a responsive solution.
 * Animate the bar change, make sure it works well when you tap buttons quickly.
-* Version control.
-* Setting it up as a project.
-* Setting up some automated tools.
-* Linting, code quality, etc.
-* Comment code.
+* Unit tests are not required.
 
 ### Deliverables 
 
-* Link to GitHub pages of the final product.
+* Link to a hosted version of the final product (there are several free hosting options such as Firebase, Heroku, GitHub Pages).
 * Link to the source on GitHub.
 * How long the exercise took.
 * Rationale around tech choices.
