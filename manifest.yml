@@ -1,7 +1,7 @@
 applications:
     - name: frontend-exercise
       command: npm start
-      buildpack: https://github.com/cloudfoundry/buildpack-nodejs.git
+      buildpack: nodejs_buildpack
       memory: 64M
       disk_quota: 256M
       instances: 1
